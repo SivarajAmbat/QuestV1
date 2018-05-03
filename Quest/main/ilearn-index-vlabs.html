@@ -1,0 +1,623 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>ilearn</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- MetisMenu CSS -->
+    <link href="css/metisMenu.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/sb-admin-2.css" rel="stylesheet">
+    <link href="css/bootstrap-left-slide-menu.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="css/font-awesome.css" rel="stylesheet" type="text/css">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+    </style>
+</head>
+<body style="background:url(images/bg.jpg); background-size:cover; ">
+    <div id="wrapper" class="">
+        <div class="overlay" style="display: none;"></div>
+        <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
+            <ul class="nav sidebar-nav">
+
+                <li style="background:#fff; text-align:center;">
+                    <h2>Self</h2>
+                </li>
+
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="pages/index.html#">
+                        <i class="fa fa-th-large fa-fw"></i>  Exam
+                        <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-user">
+
+                        <li><a href="#">  Book Exam</a> </li>
+                        <li><a href="#">  Take Exam</a> </li>
+                        <li><a href="#">  View Score</a> </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="pages/index.html#">
+                        <i class="fa fa-question-circle-o"></i> KRA &amp; Feedback
+                        <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-user">
+
+                        <li>
+                            <a href="#">
+                                Higher Education
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Revenue Generation
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Allience Training
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="pages/index.html#">
+                        <i class="fa fa-list"></i> Quick Link
+                        <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-user">
+
+                        <li><a href="#">  My Tube</a> </li>
+                        <li><a href="#">  SumTotal</a> </li>
+                        <li><a href="#">  Library</a> </li>
+                        <li><a href="#">  ilearn User Guide</a> </li>
+                        <li><a href="#">  Contact Us</a> </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="pages/index.html#">
+                        <i class="fa fa-cog"></i> Services
+                        <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-user">
+                        <li><a href="#">  Higher Education</a> </li>
+                        <li><a href="#">  Revenue Generation</a> </li>
+                        <li><a href="#">  Alliance Training</a> </li>
+                    </ul>
+                </li>
+                <li><a href="#"> <span class="fa fa-table" title="Reports"></span> Reports </a></li>
+
+                <!-- Navigation menu for Virtual Labs -->
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="pages/index.html#">
+                        <i class="fa fa-cog"></i> Virtual Labs Directory
+                        <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-user">
+                        <li><a class="" href="ilearn-index-automation.html">  Automation</a> </li>
+                        <li><a class="" href="ilearn-index-bi.html">  Business Intelligence</a> </li>
+                        <li><a class="" href="ilearn-index-databases.html">  Database</a> </li>
+                        <li><a class="" href="ilearn-index-ep.html">  Enterprise Platform</a> </li>
+                        <li><a class="" href="ilearn-index-java.html">  Java</a> </li>
+                        <li><a class="" href="ilearn-index-dotnet.html">  Microsoft .NET</a> </li>
+                        <li><a class="" href="ilearn-index-web.html">  Web Technologies</a> </li>
+                    </ul>
+
+                </li>
+
+
+            </ul>
+        </nav>
+
+        <div id="page-content-wrapper">
+            <button type="button" id="icon" class="hamburger animated fadeInLeft is-closed" data-toggle="offcanvas">
+                <span class="fa fa-user" title="self"></span>
+            </button>
+        </div>
+
+    </div>
+
+    <div id="wrapper3" class="">
+        <div class="overlay3" style="display: none;"></div>
+        <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper3" role="navigation">
+            <ul class="nav sidebar-nav">
+
+                <li style="background:#fff; text-align:center;">
+                    <h2>Administrator</h2>
+                </li>
+
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="pages/index.html#">
+                        <i class="fa fa-gears fa-fw"></i> Configuration
+                        <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-user">
+
+                        <li><a href="#">  Learning Avenues for Competency</a> </li>
+                        <li><a href="#">  CI Base Competency</a> </li>
+                        <li><a href="#">  Competency Mapping</a> </li>
+                        <li><a href="#">  CI Exclusion</a> </li>
+                        <li><a href="#"> CI Rules</a> </li>
+                        <li><a href="#"> Enable PCB/CI for IBU</a> </li>
+                        <li><a href="#">Competency Tagging</a> </li>
+                        <li><a href="#"> Future Competency-IBU Mapping</a> </li>
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="pages/index.html#">
+                        <i class="fa fa-user-secret fa-fw"></i> Learning Officer
+                        <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-user">
+
+                        <li><a href="#">  Map Indicators to Competency</a> </li>
+                        <li><a href="#">  Manage Competency Indicator</a> </li>
+                        <li><a href="#">  Project Technology Domain</a> </li>
+                        <li><a href="#">  Employee Capability Competencies</a> </li>
+                        <li><a href="#"> Employee KRA Status</a> </li>
+                        <li><a href="#"> Employee Contribution Status</a> </li>
+                        <li><a href="#">Employee Competency History</a> </li>
+                        <li><a href="#"> Map Relevant Training</a> </li>
+                        <li><a href="#"> Map IBU Internal Training</a> </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div id="page-content-wrapper3">
+            <button type="button" id="icon3" class="hamburger3 animated fadeInLeft is-closed3" data-toggle="offcanvas3">
+                <span class="fa fa-user-circle" title="Administrator"></span>
+            </button>
+        </div>
+    </div>
+
+    <div id="wrapper5" class="hidden-lg hidden-md">
+        <div class="overlay5" style="display: none;"></div>
+        <div id="page-content-wrapper5">
+            <button type="button" class="hamburger5 animated fadeInLeft is-closed5" data-toggle="offcanvas5">
+                <a href="#" style="color:#e51937;"><span class="fa fa-power-off" title="Logout"></span></a>
+            </button>
+        </div>
+    </div>
+    <div id="wrapper">
+
+        <header>
+            <div class="container-fluid" style="padding-top: 8px; padding-bottom: 5px; background: #115687; color: #fff; min-height: 50px;">
+                <div class="col-xs-6 col-sm-4" style="padding-left:50px; padding-top:-5px;"></div>
+                <div class="col-xs-4 col-sm-4 ilearn-logo no-padding"><img class=" " src="./images/ilearn1.jpg" /></div>
+                <div class="col-sm-4 hidden-xs text-right">
+                    <img class=" " src="./images/logo.png" />
+
+                    <!-- /.navbar-top-links -->
+                </div>
+            </div>
+
+            <nav>
+                <div class="container-fluid" style="background:rgba(255, 255, 255, 0.3); color:#fff; ">
+                    <div class="row">
+                        <div class="col-sm-4 col-xs-12 hidden-xs"></div>
+
+                        <div class="col-sm-8  col-xs-12 no-padding text-right">
+
+                            <ul class="nav navbar-top-links navbar-right nav-align">
+
+                                <!-- /.dropdown -->
+
+                                <li class="hidden-xs hidden-sm">
+                                    <a href="#">
+                                        <i class="fa fa-home fa-fw"></i>
+                                    </a>
+                                </li>
+                                <li class="hidden-xs hidden-sm">
+                                    <a href="#">
+                                        <i class="fa fa-list" title="sitemap"></i>
+                                    </a>
+                                </li>
+
+                                <li class="dropdown hidden-xs hidden-sm">
+                                    <a class="dropdown-toggle" data-toggle="dropdown" href="pages/index.html#">
+                                        <i class="fa fa-user fa-fw"></i> Welcome Sachin Bamne
+                                        <i class="fa fa-caret-down"></i>
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-user">
+
+                                        <li>
+                                            <a href="pages/login.html">
+                                                <i class="fa fa-sign-out fa-fw"></i> Logout
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <!-- /.dropdown-user -->
+                                </li>
+                                <!-- /.dropdown -->
+                            </ul>
+
+                            <!-- /.navbar-top-links -->
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!-- Navigation -->
+        </header>
+
+
+        <div class="row" style="margin-top: 10px;">
+
+            <div id="main" class="col-sm-12">
+
+                <!--<div class="col-sm-3 col-xs-6">
+                    <div class="col-sm-12 section-box text-center" style="padding-top: 5px;">
+
+                        <div class="project">
+                            <div class="dash-box">
+                                <img class="" style="width: 40%;" src="./images/icon-library.png" alt=" ">
+                                <div>Book Exam  </div>
+                                <div class="project__detail">
+
+                                    <small class="project__category">
+                                        <a  href="#">
+                                            <i class="fa fa-arrow-right"></i>View More </a>
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-3 col-xs-6">
+                    <div class="col-sm-12 section-box text-center" style="padding-top: 5px;">
+                        <div class="project">
+                            <div class=" dash-box">
+
+                                <img class="" style="width: 40%;" src="./images/icon-exam.png" alt=" ">
+                                <div>Take Exam</div>
+                                <div class="project__detail">
+
+                                    <small class="project__category"><a href="#"><i class="fa fa-arrow-right"></i>View More </a></small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-3 col-xs-6">
+                    <div class="col-sm-12 section-box text-center" style="padding-top: 5px;">
+                        <div class="project">
+                            <div class=" dash-box">
+
+                                <img class="" style="width: 40%;" src="./images/icon-sumtotal.png" alt=" ">
+                                <div>View Score </div>
+                                <div class="project__detail">
+
+                                    <small class="project__category"><a href="#"><i class="fa fa-arrow-right"></i>View More </a></small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                   <div class="col-sm-3 col-xs-6">
+                    <div class="col-sm-12 section-box text-center" style="padding-top: 5px;">
+                        <div class="project">
+                            <div class=" dash-box">
+
+                                <img class="" style="width: 40%;" src="./images/icon-exam2.png" alt=" ">
+                                <div>Booking Details</div>
+                                <div class="project__detail">
+
+                                    <small class="project__category"><a href="#"><i class="fa fa-arrow-right"></i>View More </a></small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>-->
+                <!-- Menu for Virtual Labs Directory -->
+
+                <div class="col-sm-3 col-xs-6">
+                    <div class="col-sm-12 section-box text-center" style="padding-top: 5px;">
+                        <div class="project">
+                            <div class="" dash-box">
+
+                                <img class="" style="width: 40%;" src="./images/icon-exam2.png" alt="">
+                                <div>Web Technologies</div>
+                                <div class="project__detail">
+                                    <small class="project__category"><a class="site_web" href="ilearn-index-web.html"><i class="fa fa-arrow-right"></i>View More </a></small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-3 col-xs-6">
+                    <div class="col-sm-12 section-box text-center" style="padding-top: 5px;">
+                        <div class="project">
+                            <div class=" dash-box">
+
+                                <img class="" style="width: 40%;" src="./images/icon-exam2.png" alt=" ">
+                                <div>Java</div>
+                                <div class="project__detail">
+                                    <small class="project__category"><a href="ilearn-index-java.html"><i class="fa fa-arrow-right"></i>View More </a></small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-3 col-xs-6">
+                    <div class="col-sm-12 section-box text-center" style="padding-top: 5px;">
+                        <div class="project">
+                            <div class=" dash-box">
+
+                                <img class="" style="width: 40%;" src="./images/icon-exam2.png" alt=" ">
+                                <div>Microsoft .NET</div>
+                                <div class="project__detail">
+                                    <small class="project__category"><a href="ilearn-index-dotnet.html"><i class="fa fa-arrow-right"></i>View More </a></small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-3 col-xs-6">
+                    <div class="col-sm-12 section-box text-center" style="padding-top: 5px;">
+                        <div class="project">
+                            <div class=" dash-box">
+
+                                <img class="" style="width: 40%;" src="./images/icon-exam2.png" alt=" ">
+                                <div>Enterprise Platform</div>
+                                <div class="project__detail">
+                                    <small class="project__category"><a href="ilearn-index-ep.html"><i class="fa fa-arrow-right"></i>View More </a></small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-3 col-xs-6">
+                    <div class="col-sm-12 section-box text-center" style="padding-top: 5px;">
+                        <div class="project">
+                            <div class=" dash-box">
+
+                                <img class="" style="width: 40%;" src="./images/icon-exam2.png" alt=" ">
+                                <div>Databases</div>
+                                <div class="project__detail">
+                                    <small class="project__category"><a href="ilearn-index-databases.html"><i class="fa fa-arrow-right"></i>View More </a></small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-3 col-xs-6">
+                    <div class="col-sm-12 section-box text-center" style="padding-top: 5px;">
+                        <div class="project">
+                            <div class=" dash-box">
+
+                                <img class="" style="width: 40%;" src="./images/icon-exam2.png" alt=" ">
+                                <div>Business Intelligence</div>
+                                <div class="project__detail">
+                                    <small class="project__category"><a href="ilearn-index-bi.html"><i class="fa fa-arrow-right"></i>View More </a></small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-3 col-xs-6">
+                    <div class="col-sm-12 section-box text-center" style="padding-top: 5px;">
+                        <div class="project">
+                            <div class=" dash-box">
+
+                                <img class="" style="width: 40%;" src="./images/icon-exam2.png" alt=" ">
+                                <div>Automation</div>
+                                <div class="project__detail">
+                                    <small class="project__category"><a href="ilearn-index-automation.html"><i class="fa fa-arrow-right"></i>View More </a></small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- /.row -->
+        <!-- /.row -->
+
+        <div class="row" style="min-height: 200px;">
+
+
+        </div>
+
+
+
+        <!-- /#page-wrapper -->
+        <div class="container text-center" style="color:#333; margin-top:20px; padding:10px; border-top:1px solid #ccc;">
+            <div class="col-sm-12">&copy; Copyright 2017. Tech Mahindra Ltd.</div>
+        </div>
+    </div>
+    <!-- /#wrapper -->
+    <!-- Large modal -->
+
+    <div class="modal fade bd-example-modal-lg exam-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <div class="col-sm-6"><h3> EXAM </h3></div>
+                    <div class="col-sm-6">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-sm-12 ">
+                            <div class="col-sm-4 col-xs-6">
+                                <div class="col-sm-12 section-box-modal text-center">
+                                    <img class="" style="width:40%;" src="images/icon-exam.png" alt=" ">
+                                    <div><a href="#"> Custumer Exam Score</a></div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-4 col-xs-6">
+                                <div class="col-sm-12 section-box-modal text-center">
+                                    <img class="" style="width:40%;" src="images/icon-certificate.png" alt=" ">
+                                    <div><a href="#">External Certification</a></div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-4 col-xs-6">
+                                <div class="col-sm-12 section-box-modal text-center">
+                                    <img class="" style="width:40%;" src="images/icon-certificate.png" alt=" ">
+                                    <div><a href="#">External Certification</a></div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-4 col-xs-6">
+                                <div class="col-sm-12 section-box-modal text-center">
+                                    <img class="" style="width:40%;" src="images/icon-exam.png" alt=" ">
+                                    <div><a href="#">Book Exam</a></div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-4 col-xs-6">
+                                <div class="col-sm-12 section-box-modal text-center">
+                                    <img class="" style="width:40%;" src="images/icon-exam2.png" alt=" ">
+                                    <div><a href="#">Take Exam</a></div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-4 col-xs-6">
+                                <div class="col-sm-12 section-box-modal text-center">
+                                    <img class="" style="width:40%;" src="images/icon-exam.png" alt=" ">
+                                    <div><a href="#">View Score</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Large modal -->
+
+    <div class="modal fade bd-example-modal-lg spoc-details" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content" style="background:#fff;">
+
+                <div class="modal-header">
+                    <div class="col-sm-6"><h3>Your SPOC Details </h3></div>
+                    <div class="col-sm-6">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-sm-12" style="  line-height:25px; padding:10px;">
+                            <div class="col-sm-6" style="  line-height:25px; padding:10px;">
+                                <b>Learning Officer(Tech.) :</b>  <span style="color:#e51937;">Sachin Matale, Shruti Bhalkikar</span><br />
+                                <b>Learning Officer(Behavioral) :</b>  <span style="color:#e51937;">NA</span><br />
+                                <b>Learning Consultant :</b>    <span style="color:#e51937;">Ankush Bahirat</span><br />
+                            </div>
+
+                            <div class="col-sm-6" style="  line-height:25px; padding:10px;">
+
+                                <b>CI Cabinet :</b>   <span style="color:#e51937;">NA</span><br />
+                                <b>Learning Cabinet/Champion : </b>   <span style="color:#e51937;">Satyajeet Shaligram</span><br />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="js/metisMenu.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/sb-admin-2.js"></script>
+    <script src="js/bootstrap-left-slide-menu.js"></script>
+    <script>
+        $(window).scroll(function () {
+            if ($(window).scrollTop() >= 10) {
+                $('nav').addClass('fixed-header');
+            }
+            else {
+                $('nav').removeClass('fixed-header');
+            }
+        });
+    </script>
+
+    <script>
+
+
+        $('.site_web').click(function () {
+            $.get("/pages/index_template1.html", function (data) {
+                $('#main').html(data);
+            });
+        });
+
+
+        $('#icon').click(function () {
+            if ($('#icon span').hasClass('ToggleButton')) {
+                $('#icon').html('<span class="fa fa-user" ></span>');
+            }
+            else {
+                $('#icon').html('<span class="ToggleButton fa fa-close"></span>');
+            }
+        });
+
+        $('#icon2').click(function () {
+            if ($('#icon2 span').hasClass('ToggleButton')) {
+                $('#icon2').html('<span class="fa fa-users" ></span>');
+            }
+            else {
+                $('#icon2').html('<span class="ToggleButton fa fa-close"></span>');
+            }
+        });
+
+        $('#icon3').click(function () {
+            if ($('#icon3 span').hasClass('ToggleButton')) {
+                $('#icon3').html('<span class="fa fa-user-circle" ></span>');
+            }
+            else {
+                $('#icon3').html('<span class="ToggleButton fa fa-close"></span>');
+            }
+        });
+
+        $('#icon4').click(function () {
+            if ($('#icon4 span').hasClass('ToggleButton')) {
+                $('#icon4').html('<span class="fa fa-gears" ></span>');
+            }
+            else {
+                $('#icon4').html('<span class="ToggleButton fa fa-close"></span>');
+            }
+        });
+
+    </script>
+</body>
+</html>

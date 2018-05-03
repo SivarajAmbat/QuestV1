@@ -1,0 +1,51 @@
+﻿[
+  {
+    "title": "Cloud 9",
+    "description": "Its a cloud based AWS platform. AWS Cloud9 is a cloud-based integrated development environment (IDE) that lets you write, run, and debug your code with just a browser It includes a code editor, debugger, and terminal. You can Develop Full Stack Coding and Deploy them on AWS cloud for testing and also for Production",
+    "topics": [
+      "Core Java",
+      "JDBC",
+      "Servlets",
+      "JSP",
+      "Spring Framework",
+      "Hibernate"
+    ],
+    "cost": "free",
+    "features": [
+      "Editor"
+    ],
+    "url": "https://aws.amazon.com/cloud9/?origin=c9io",
+    "icon": "/images/vlabs/AWSCloud9.png"
+  },
+  {
+    "title": "CodeEnvy",
+    "description": "Codenvy is a Containerized Coding Workspace Platform for Fullstack development. Codenvy workspaces start with production runtimes defined by your existing Docker and Compose files. Develop code with portable Docker runtimes. 3 GB Free RAM space. You can import external Libraries like Spring, HIbernate etc. You can also create a Docker Conatiner with Java and MySQL for Database Practice",
+    "topics": [
+      "Core Java",
+      "JDBC",
+      "Servlets",
+      "JSP",
+      "Spring Framework",
+      "Hibernate"
+    ],
+    "cost": "free",
+    "features": [
+      "Editor"
+    ],
+    "url": "https://codenvy.io/",
+    "icon": "/images/vlabs/codenvy.jpg"
+  },
+  {
+    "title": "Hackerrank",
+    "description": "Having a Platform to code Core Java Standard Codings. Providing 30 Day Code Challenge Problem Statements. IDE Intellisense is provided  and Java 8 is also included. Having Beginners , Intermediate and Advanced Levels Of Coding Challenges",
+    "topics": [
+      "Core Java"
+    ],
+    "cost": "free",
+    "features": [
+      "Editor"
+    ],
+    "url": "https://www.hackerrank.com/",
+    "icon": "/images/vlabs/HackerRank_logo.png"
+  }
+ ]

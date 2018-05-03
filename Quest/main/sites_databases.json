@@ -1,0 +1,21 @@
+﻿[
+  {
+    "title": "Oracle Cloud",
+    "description": "Free Cloud account by Oracle. Signup is required",
+    "topics": [
+      "SQL/PL-SQL",
+      "Database",
+      "Weblogic Server",
+      "MYSQL Database",
+      "Web Center Portal",
+      "SOA Suite"
+    ],
+    "cost": "free",
+    "features": [
+      "EDITOR",
+      "EDITOR WITH TUTORIAL"
+    ],
+    "url": "https://cloud.oracle.com/en_US/mobile",
+    "icon": "/images/vlabs/Oracle-cloud.jpg"
+  }
+]

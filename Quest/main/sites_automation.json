@@ -1,0 +1,69 @@
+﻿[
+  {
+    "title": "Guru 99",
+    "description": "Platforms with problem statements",
+    "topics": [
+      "HP UFT"
+    ],
+    "cost": "free",
+    "features": [
+      "Editor"
+    ],
+    "url": "https://www.guru99.com/live-uft-testing.html",
+    "icon": "/images/vlabs/guru99.jpg"
+  },
+  {
+    "title": "Codechef",
+    "description": "Pure coding playgrounds",
+    "topics": [
+      "Python"
+    ],
+    "cost": "free",
+    "features": [
+      "Editor"
+    ],
+    "url": "https://www.codechef.com/ide",
+    "icon": "/images/vlabs/codechef_logo.png"
+  },
+  {
+    "title": "Katacoda",
+    "description": "Platforms with containerized environments",
+    "topics": [
+      "Jenkins",
+      "Git"
+    ],
+    "cost": "free",
+    "features": [
+      "Editor and Tutorial"
+    ],
+    "url": "https://www.katacoda.com/",
+    "icon": "/images/vlabs/katacoda.png"
+  },
+  {
+    "title": "Blazemeter",
+    "description": "Platforms with containerized environments",
+    "topics": [
+      "Selenium Web Driver",
+      "JMeter"
+    ],
+    "cost": "free",
+    "features": [
+      "Editor"
+    ],
+    "url": "https://www.blazemeter.com/",
+    "icon": "/images/vlabs/blazemeter1.png"
+  },
+  {
+    "title": "repl.it",
+    "description": "Powerful and simple online compiler, IDE, interpreter, and REPL (Repeat-Evaluate-Print-Loop)",
+    "topics": [
+      "Python"
+    ],
+    "cost": "free",
+    "features": [
+      "Editor"
+    ],
+    "url": "https://repl.it/",
+    "icon": "/images/vlabs/replit.png"
+  }
+]

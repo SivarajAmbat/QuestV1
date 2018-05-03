@@ -1,0 +1,28 @@
+﻿[
+  {
+    "title": "Microsoft Power BI",
+    "description": "Transform your data into rich visuals for you to collect and organize",
+    "topics": [
+      "POWER BI"
+    ],
+    "cost": "free",
+    "features": [
+      "Editor"
+    ],
+    "url": "https://powerbi.microsoft.com/en-us/landing/signin/",
+    "icon": "/images/vlabs/PoweBILogo.png"
+  },
+  {
+    "title": "TutorialsPoint",
+    "description": "Free Online IDE and Terminal - Edit, Compile, Execute Programs Online to experience the best cloud computing. Execute variety of projects with the help of simple clicks",
+    "topics": [
+      "R LANGUAGE"
+    ],
+    "cost": "free",
+    "features": [
+      "Editor"
+    ],
+    "url": "https://www.tutorialspoint.com/execute_r_online.php ",
+    "icon": "/images/vlabs/R-language.png"
+  }
+]

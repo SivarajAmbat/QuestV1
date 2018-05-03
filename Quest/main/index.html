@@ -1,0 +1,257 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Virtual Lab Directory - Web Technologies</title>
+
+    <!-- Styles -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <style>
+        .card_background {
+            background-color: #DCDCDC !important;
+        }
+
+        .listcard {
+            background-color: #ededed !important;
+        }
+
+        a:link {
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="row" style="margin-top:10px;">
+
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-body card_background">
+                        <h5>Filter By</h5>
+                        <hr>
+
+                        <h6>Cost Basis</h6>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="checkbox" name="cost" value="free">
+                                FREE OF COST
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="checkbox" name="cost" value="paid">
+                                TRIAL BASIS
+                            </label>
+                        </div>
+                        <hr>
+
+                        <h6>Supported Technologies</h6>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="checkbox" name="topics" value="HTML5/CSS3">
+                                HTML/CSS3
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="checkbox" name="topics" value="JavaScript">
+                                JAVASCRIPT
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="checkbox" name="topics" value="Angular">
+                                ANGULAR
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="checkbox" name="topics" value="jQuery">
+                                JQUERY
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="checkbox" name="topics" value="NodeJS">
+                                NODE.JS
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="checkbox" name="topics" value="Bootstrap">
+                                BOOTSTRAP
+                            </label>
+                        </div>
+
+                        <hr>
+
+                        <h6>SUPPORTED FEATURES</h6>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="checkbox" name="features" value="Editor">
+                                EDITOR ONLY
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="checkbox" name="features" value="Editor and Tutorial">
+                                EDITOR WITH TUTORIAL
+                            </label>
+                        </div>
+                        <hr>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="input-group ">
+                            <!-- <i class="fa fa-search"></i> -->
+                            <input class="form-control" placeholder="Search" id="txtSearch">
+
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <select id="sltSort" class="custom-select">
+                            <option selected value="A-Z">Sort A-Z</option>
+                            <option value="Z-A">Sort Z-A</option>
+                        </select>
+                    </div>
+                </div>
+                <hr>
+                <div id="resultArea">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js"></script>
+
+    <script>
+
+        function refresh() {
+            var costBasis = [];
+            var topics = [];
+            var features = [];
+            var sitesJSON = [];
+            var sitelist = [];
+
+            $('input[name="cost"]:checked').each(function () {
+                costBasis.push(this.value);
+            });
+
+            $('input[name="topics"]:checked').each(function () {
+                topics.push(this.value);
+            });
+
+            $('input[name="features"]:checked').each(function () {
+                features.push(this.value);
+            });
+
+            $.getJSON("sites_web.json", function (data) {
+                $.each(data, function (i, d) {
+                    sitesJSON.push(d);
+                });
+                renderHTML();
+            });
+
+            function renderHTML() {
+                sitelist = filterSites(sitesJSON, costBasis, topics, features);
+                sitelist = sortSites(sitelist);
+                sitelist = searchSites(sitelist);
+                generateHTML(sitelist);
+                $("h5.card-title").mark($('#txtSearch').val());
+            };
+        }
+
+        function searchSites(sitelist) {
+            var search = $('#txtSearch').val().toLowerCase();
+            var list = [];
+            $(sitelist).each(function () {
+
+                var contains = this.title.toLowerCase().indexOf(search) != -1 ? 1 : 0;
+                if (contains > 0 || search.length == 0)
+                    list.push(this);
+            });
+            return list;
+        }
+        function sortSites(sitelist) {
+            if ($('#sltSort').val() == 'A-Z') {
+                sitelist.sort(function (a, b) {
+                    return a.title.localeCompare(b.title);
+                });
+            }
+            else {
+                sitelist.sort(function (a, b) {
+                    return b.title.localeCompare(a.title);
+                });
+            }
+            return sitelist;
+        }
+        function filterSites(sitesJSON, cost, topics, features) {
+            list = [];
+
+            $(sitesJSON).each(function () {
+                var intertopics = this.topics.filter(e => topics.indexOf(e) != -1).length;
+                var interfeatures = this.features.filter(e => features.indexOf(e) != -1).length;
+                var intercost = cost.indexOf(this.cost) != -1 ? 1 : 0;
+                if ((intertopics > 0 || topics.length == 0) && (interfeatures > 0 || features.length == 0) && (intercost > 0 || cost.length == 0))
+                    list.push(this);
+            });
+
+            return list;
+        }
+
+        function generateHTML(sitelist) {
+            $('#resultArea').empty();
+            $(sitelist).each(function () {
+                var newitem = '<div class="row" style="margin-top:5px;" >\
+                        <div class="col-md-12">\
+                            <div class="card">\
+                                <div class="card-body listcard">\
+                                    <div class="row">\
+                                        <div class="col-md-2">\
+                                            <img src="'+ this.icon + '" class="img-fluid">\
+                                        </div>\
+                                        <div class="col-md-8">\
+                                            <h5 class="card-title">'+ this.title + '</h5>\
+                                            <p class="card-text">'+ this.description + '</p>\
+                                        </div>\
+                                        <div class="col-md-2 text-center">\
+                                            <br />\
+                                            <div class="col-md-12">\
+                                                <a href="#"><i class="fa fa-file-video-o fa-2x"></i></a>\
+                                            </div>\
+                                            <br />\
+                                            <div class="col-md-12">\
+                                                <a target="_new" href="'+ this.url + '"><i class="fa fa-arrow-circle-right fa-2x"></i></a>\
+                                            </div>\
+                                        </div >\
+                                    </div >\
+                                </div >\
+                            </div >\
+                        </div >\
+                    </div >';
+                $('#resultArea').append(newitem);
+            });
+        }
+        $(document).ready(function () {
+            refresh();
+            $(":checkbox").change(refresh);
+            $("#txtSearch").change(refresh);
+            $("#txtSearch").keyup(refresh);
+            $('#sltSort').change(refresh);
+
+        });
+    </script>
+</body>
+</html>

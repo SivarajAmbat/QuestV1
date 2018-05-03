@@ -1,0 +1,35 @@
+﻿[
+  {
+    "title": "APIGEE ACADEMY",
+    "description": "Basic environment is free with limited operations and configuration. For advance topics, paid version of platform is available with Google support.",
+    "topics": [
+      "APIGEE"
+    ],
+    "cost": "free",
+    "features": [
+      "Editor"
+    ],
+    "url": "https://academy.apigee.com/",
+    "icon": "/images/vlabs/apigee.png"
+  },
+  {
+    "title": "AWS",
+    "description": "Good Environment. We have to do the setup from scratch",
+    "topics": [
+      "TOMCAT",
+      "WEBLOGIC",
+      "DOZER",
+      "APACHE",
+      "CXF",
+      "JBOSS",
+      "APIGEE",
+      "APACHE KAFKA"
+    ],
+    "cost": "paid",
+    "features": [
+      "Editor"
+    ],
+    "url": "https://aws.amazon.com/",
+    "icon": "images/vlabs/aws.jpg"
+  }
+]
